@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+  }
+
+body{
+    background-color:black;
+}
+
+.recuo a{
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size:3.1rem;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilo da header */
+header{
+    padding: 130px 5%;
+}
+
+header >.recuo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li{
+   color:#8b8585;
+}
+
+header nav ul li:hover{
+    color: #fff;
+}
+
+header nav ul li{
+display: inline-block;
+padding: 0 40px;
+}
+
+/* Estilo da main */
+section #sobre-mim{
+    padding: 40px 4%;
+}
+
+section #sobre-mim .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-mim h1{
+    color: #fff;
+    font-size:2.7rem;
+    margin: 0% 5%;
+}
+#sobre-mim p{
+    color: #fff;
+    font-size:2.3rem;
+    margin: 0% 5%;
+}
+
+/* Estilo projetos */
+section #projetos{
+        padding: 40px 4%;
+}
+
+section #projetos .flex{
+    justify-content: space-around;
+    align-items: center;
+}
+#projetos .descricao-projetos{
+    color: #fff;
+    padding: 60px 10%;
+    border-radius: 20px;
+ }
+
+ #projetos .descricao-projetos:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px #ffffff31;
+   
+ }
+ 
+ .descricao-projetos i{
+    font-size: 530%;
+    color: #102044;
+    
+ }
+
+ .descricao-projetos p{
+    font-size:2.2rem;
+    color: #fff;
+ }
+
+a{
+    color: #102044;
+    padding: 20px;
+    font-size: 1.9rem;
+    display: flex;
+
+}
+
+a:hover{
+    font-size:1.8rem;
+    color: #8b8585;
+}
+
+ #projetos .descricao-projetos h3{
+    font-size: 2.0rem;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ /*Estilo habilidades */
+ section #habilidades {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .listagem {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+  }
+  
+  
+  .item_first, .item_second, .item_third {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  
+  .listagem p {
+    font-size: 2rem;
+    background-color: #102044;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Estilo rodape */
+
+footer{
+    padding: 70px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+.logo-footer{
+    padding: 20px 0%;
+}
+
+.borda{
+    padding: 20px 0%;
+    border-top:2px solid #fff;
+}
+
+footer .line-footer p i{
+    color: #8b8585;
+    font-size: 130%;
+}
+
+footer .line-footer p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width:1200px){
+
+   /*classes gerais*/
+   .flex{
+   flex-direction:column;
+   }
+   
+    /*cabeçalho*/
+    .menu{
+display: none;
+    }
+
+    /*h1 sobre mim*/
+    #sobre-mim h1{
+        font-size: 1.3rem;
+    }
+
+     /*p sobre mim*/
+     #sobre-mim p{
+        font-size:0.9rem;
+     }
+     /* Estilo projetos */
+    section #projetos{
+        padding: 30px 7%;
+}
+       /*h3 projetos*/
+       
+    #projetos .descricao-projetos h3{
+        font-size: 1.4rem;
+       }
+
+         /*h2 titulo*/
+    h2.titulo{
+        font-size:1.8rem;
+       }
+
+         /*p projetos*/
+    .descricao-projetos p{
+            font-size:0.9rem;
+         }
+
+          /*p projetos*/
+
+    .descricao-projetos i{
+            font-size: 490%;
+         }
+
+          /*p line-footer*/
+    footer .line-footer p{
+            font-size: 0.7rem;
+         }
+
+          /*img habilidades*/
+    .listagem {
+            display: flex;
+            flex-direction: column;
+        }
+
+         .listagem p {
+            font-size: 1.7rem;
+            width: 80%;
+            height: auto;
+         }
+        }
