@@ -4,121 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portifolio</title>
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--fim bootstrap-->
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="recuo">
-            <div class="logo">
-                <img src="logo200.png">
-            </div><!--logo-->
-            <nav class="menu">
-                <ul>
-                    <li><a href="sobre-mim"></a>Início</li>
-                    <li><a href="projetos"></a>Sobre mim</li>
-                    <li><a href="habilidades"></a>Projetos</li>
-                </ul>
-            </nav>
-        </div><!--recuo-->
+        <nav>
+            <h3>Bruna Tereza</h3> <!-- logo -->
+            <ul>
+                <li><a href="#aboutMe">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-       <section id="sobre-mim">
-       <div class="recuo">
-        <div class="flex">
-            <div class="texto-sobre-mim">
-                <h1>OLÁ, SOU A TEREZA!</h1>
-                <p>Muito prazer, nome é Bruna Tereza! Sou uma aspirante na área de programação, meio paraense, mas meio bahiana, apaixonada por cinema. <br>
-                    Busco me aperfeiçoar para que possa fazer projetos brilhantes no futuro. </p>
-            </div><!--texto-->
-
-            <div class="img-sobre-mim">
-                <img src="pessoa500.jpg">
-            </div> <!--imagem-->
-        </div> <!--flex-->
-       </div> <!--recuo-->
-       </section> <!--sobremim-->
-    </main>
-
-    <section id="projetos">
-        <div class="recuo">
-                <h2 class="titulo">PROJETOS</h2>
-                <div class="flex">
-
-                <div class="descricao-projetos">
-                    <i class="bi bi-controller"></i>
-                    <h3>SCRATCH</h3>
-                    <p>Meu primeiro projeto em grupo, e primeiro contato, em programação!</p>
-                    <p><a href="https://scratch.mit.edu/projects/1059246771">Confira</a></p>
-                </div><!--descrição-->
-
-                <div class="descricao-projetos">
-                    <i class="bi bi-database"></i>
-                    <h3>BANCO DE DADOS</h3>
-                    <p>Neste projeto você pode encontar uma base de dados, com três tabelas para um salão de beleza</p>
-                    <p><a href="https://drive.google.com/drive/folders/1LsBDcI0-T7BJ1DfklkZO7WtdVyW2gnIv?usp=drive_link">Confira</a></p>
-                </div><!--descrição-->
-
-                <div class="descricao-projetos">
-                    <i class="bi bi-filetype-html"></i>
-                    <h3>HTML</h3>
-                    <p>Até conseguir fazer este portifólio inteiramente com html e css, foi uma longa caminhada</p>
-                    <p><a href="https://drive.google.com/drive/folders/1kyRLp0MBLoiD42IvNJXW6HK0gMma3Ld0?usp=drive_link">Confira</a></p>
-                </div><!--descrição-->
-
-        </div> <!--recuo-->
-            </div> <!--flex-->
+<main>
+    <section id="aboutMe">
+        <h1>Olá, sou a Tereza!</h1>
+        <p>Muito prazer, meu nome é Bruna Tereza! 
+            Sou uma aspirante na área de programação,
+            apaixonada pelo mundo da tecnologia em toda sua extensão.
+            Busco me aperfeiçoar a cada dia, construindo um futuro brilhante</p>
+        <img src="/assets/image/icon.png" alt="imagem de garota de cabelos cacheados">
     </section>
 
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <article>
+            <h3>Soft skills</h3>
+            <ul>
+                <li class="softItens">Trabalho em equipe</li>
+                <li class="softItens">Criatividade</li>
+                <li class="softItens">Empatia</li>
+            </ul>
+        </article>
 
-    <section id="habilidades">
-        <div class="recuo">
-            <h2 class="titulo">HABILIDADES</h2>
-            <div class="item-box">
+        <article>
+            <h3>Hard skills</h3>
+            <li class="hardItens">HTML</li>
+            <li class="hardItens">CSS</li>
+            <li class="hardItens">JAVASCRIPT</li>
+        </article>              
+    </section>
 
-                <ul class="listagem">
+    <section id="projects">
+       <h2>Projetos</h2>
+       <p>Veja e acesse, se desejar, alguns dos meus projetos</p>
+        <article>
+            <img src="/assets/image/receita.png" alt="imagem de um site de receita de mousse de maracujá">
+            <button id="receita"><i class="bi bi-arrow-up-right-square"><a href=""></a></i></button>
+        </article>
 
-                  <li class="item_first">
-                    <img src="programadorr.jpg">
-                    <p>HTML e CSS básico</p>
-                  </li>
+        <article>
+            <img src="/assets/image/starmovie.png" alt="imagem de um site de cadastro de filmes">
+            <button id="starmovie"><i class="bi bi-arrow-up-right-square"><a href=""></a></i></button>
+        </article>
 
-                  <li class="item_second">
-                    <img src="criativoo.jpg">
-                    <p>Criatividade</p>
-                  </li>
+        <article>
+            <img src="/assets/image/educacao para todos.png" alt="imagem de um site sobre educação">
+            <button id="educacaoParaTodos"><i class="bi bi-arrow-up-right-square"></i></button>
+        </article>
+    </section>
 
-                  <li class="item_third">
-                    <img src="estudiosoo.jpg">
-                    <p>Curiosidade em solucionar desafios</p>
-                  </li>
-                
-                </ul>
-    
-    </div> <!--recuo-->
-        </div> <!--item-box-->
-            </section> <!--habilidades-->
+    <section id="contact">
+        <h3>Contato</h3>
+        <p>Todos os projetos, contatos e mais informações sobre mim 
+        podem ser encontrados nas redes sociais abaixo </p>
+        <ul>
+            <li id="github"><i class="bi bi-github"></i></li>
+            <li id="linkedin"><i class="bi bi-linkedin"></i></li>
+            <li id="gmail"><i class="bi bi-envelope-at"></i></li>
+            <li id="curriculum"></li><i class="bi bi-file-earmark-person"></i></li>
+        </ul>
 
-            <footer>
-                <div class="recuo">
-                    <div class="line-footer">
-                        <div class="flex">
-                            <div class="logo-footer">
-                             <img src="logo200.png">
-                            </div><!--logo-->
-                        </div><!--flex-->
-                    </div> <!--line-footer-->
+    </section>
+</main>
 
-                    <div class="line-footer borda">
-                        <p><i class="bi bi-envelope-fill"></i> brunaaasilvaaa@gmail.com</p>
-                        </div> <!--line-footer-->
-                </div> <!--recuo-->
-            </footer>
-
+<script src="/assets/js/script.js"></script>
 </body>
 
 </html>
